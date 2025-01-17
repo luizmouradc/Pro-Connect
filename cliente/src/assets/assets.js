@@ -187,15 +187,15 @@ export const jobsData = [
             <li>Forte compreensão de segurança web e otimização de desempenho.</li>
             <li>Habilidade para trabalhar em um ambiente Agile.</li>
         </ol>`,
-        salary: 82000,
-        date: 1729681667114,
+        salary: 17000,
+        date: 1735257600000,
         category: "Programção",
     },
     {
         _id: '2',
         title: "Cientista de Dados",
         location: "Rio de Janeiro",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -220,8 +220,8 @@ export const jobsData = [
             <li>Familiaridade com técnicas e algoritmos de aprendizado de máquina.</li>
             <li>Excelentes habilidades de resolução de problemas e pensamento crítico.</li>
         </ol>`,
-        salary: 72000,
-        date: 1729681667114,
+        salary: 12000,
+        date: 1735343737651,
         category: "Ciência de Dados",
     }
     ,
@@ -229,7 +229,7 @@ export const jobsData = [
         _id: '3',
         title: "Designer UI/UX",
         location: "João Pessoa",
-        level: "Iniciante",
+        level: "Júnior",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -254,8 +254,8 @@ export const jobsData = [
             <li>Excelentes habilidades de comunicação e trabalho em equipe.</li>
             <li>Habilidades criativas de resolução de problemas.</li>
         </ol>`,
-        salary: 61000,
-        date: 1729681667114,
+        salary: 5000,
+        date: 1735429875302,
         category: "Design",
     },
     {
@@ -287,14 +287,14 @@ export const jobsData = [
             <li>Familiaridade com tecnologias de conteinerização (ex.: Docker, Kubernetes).</li>
             <li>Excelentes habilidades de resolução de problemas e análise.</li>
         </ol>`,
-        salary: 53000,
-        date: 1729681667114,
+        salary: 18000,
+        date: 1735516012953,
         category: "Programação",
     },{
         _id: '5',
         title: "Engenheiro de Software",
         location: "João Pessoa",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -319,8 +319,8 @@ export const jobsData = [
             <li>Familiaridade com sistemas de controle de versão (ex.: Git).</li>
             <li>Excelentes habilidades de comunicação e trabalho em equipe.</li>
         </ol>`,
-        salary: 91000,
-        date: 1729681667114,
+        salary: 10000,
+        date: 1735602150604,
         category: "Programação",
     },
     {
@@ -352,8 +352,8 @@ export const jobsData = [
             <li>Excelentes habilidades de comunicação e trabalho em equipe.</li>
             <li>Certificações relevantes (ex.: CCNA, CCNP) são um diferencial.</li>
         </ol>`,
-        salary: 77000,
-        date: 1729681667114,
+        salary: 15000,
+        date: 1735688288255,
         category: "Redes",
     },
     {
@@ -385,15 +385,15 @@ export const jobsData = [
             <li>Excelentes habilidades de comunicação e relacionamento interpessoal.</li>
             <li>Certificação em gerenciamento de projetos (ex.: PMP, Scrum Master) é um diferencial.</li>
         </ol>`,
-        salary: 60000,
-        date: 1729681667114,
+        salary: 18000,
+        date: 1735774425906,
         category: "Gestão",
     },
     {
         _id: '8',
         title: "Desenvolvedor de Aplicativos Móveis",
         location: "Fortaleza",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -418,8 +418,8 @@ export const jobsData = [
             <li>Excelentes habilidades de resolução de problemas e atenção aos detalhes.</li>
             <li>Familiaridade com sistemas de controle de versão (ex.: Git).</li>
         </ol>`,
-        salary: 112000,
-        date: 1729681667114,
+        salary: 12000,
+        date: 1735860563557,
         category: "Programação",
     },
     {
@@ -451,15 +451,15 @@ export const jobsData = [
             <li>Excelentes habilidades analíticas e de resolução de problemas.</li>
             <li>Certificações relevantes (ex.: AWS Certified Solutions Architect) são um diferencial.</li>
         </ol>`,
-        salary: 96000,
-        date: 1729681667114,
+        salary: 20000,
+        date: 1735946701208,
         category: "Programação",
     },
     {
         _id: '10',
         title: "Redator Técnico",
         location: "Brasília",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -484,15 +484,15 @@ export const jobsData = [
             <li>Fortes habilidades de comunicação e colaboração.</li>
             <li>Atenção aos detalhes e compromisso com a qualidade.</li>
         </ol>`,
-        salary: 72000,
-        date: 1729681667114,
+        salary: 9000,
+        date: 1736032838859,
         category: "Marketing",
     },
     {
         _id: '11',
         title: "Analista de Cibersegurança",
         location: "Curitiba",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -517,8 +517,8 @@ export const jobsData = [
             <li>Excelentes habilidades de resolução de problemas e análise.</li>
             <li>Certificações relevantes (ex.: CISSP, CEH) são um diferencial.</li>
         </ol>`,
-        salary: 62000,
-        date: 1729681667114,
+        salary: 10000,
+        date: 1736118976510,
         category: "Cibersegurança",
     }
     ,
@@ -526,7 +526,7 @@ export const jobsData = [
         _id: '12',
         title: "Analista de Negócios",
         location: "Florianópolis",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -551,8 +551,8 @@ export const jobsData = [
             <li>Experiência com análise de dados e relatórios.</li>
             <li>Familiaridade com metodologias ágeis é um diferencial.</li>
         </ol>`,
-        salary: 68000,
-        date: 1729681667114,
+        salary: 9000,
+        date: 1736205114161,
         category: "Gestão",
     }
     ,
@@ -560,7 +560,7 @@ export const jobsData = [
         _id: '13',
         title: "Especialista em Marketing",
         location: "Belo Horizonte",
-        level: "Iniciante",
+        level: "Júnior",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -585,8 +585,8 @@ export const jobsData = [
             <li>Habilidade criativa e resolução de problemas.</li>
             <li>Disposição para aprender e se adaptar em um ambiente dinâmico.</li>
         </ol>`,
-        salary: 77000,
-        date: 1729681667114,
+        salary: 5000,
+        date: 1736291251812,
         category: "Marketing",
     }
     ,
@@ -619,8 +619,8 @@ export const jobsData = [
             <li>Excelentes habilidades de resolução de problemas e atenção aos detalhes.</li>
             <li>Capacidade de comunicar conceitos complexos para públicos não técnicos.</li>
         </ol>`,
-        salary: 65000,
-        date: 1729681667114,
+        salary: 20000,
+        date: 1736377389463,
         category: "Ciência de Dados",
     }
     ,
@@ -628,7 +628,7 @@ export const jobsData = [
         _id: '15',
         title: "Designer UX/UI",
         location: "Porto Alegre",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -653,8 +653,8 @@ export const jobsData = [
             <li>Excelentes habilidades de comunicação e capacidade de trabalho colaborativo.</li>
             <li>Um portfólio com projetos de design relevantes é obrigatório.</li>
         </ol>`,
-        salary: 64000,
-        date: 1729681667114,
+        salary: 9000,
+        date: 1736463527114,
         category: "Design",
     }
     ,
@@ -687,8 +687,8 @@ export const jobsData = [
             <li>Excelentes habilidades de resolução de problemas e troubleshooting.</li>
             <li>Certificações relevantes (ex.: AWS Certified DevOps Engineer) são um diferencial.</li>
         </ol>`,
-        salary: 74000,
-        date: 1729681667114,
+        salary: 18000,
+        date: 1736549664765,
         category: "Programação",
     }
     ,
@@ -721,8 +721,8 @@ export const jobsData = [
             <li>Experiência com softwares de CRM (ex.: Salesforce).</li>
             <li>Mentalidade orientada para resultados com foco no cumprimento de metas.</li>
         </ol>`,
-        salary: 59000,
-        date: 1729681667114,
+        salary: 18000,
+        date: 1736635802416,
         category: "Marketing",
     }
     ,
@@ -730,7 +730,7 @@ export const jobsData = [
         _id: '18',
         title: "Especialista em Recursos Humanos",
         location: "Brasília",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -755,8 +755,8 @@ export const jobsData = [
             <li>Capacidade de manter confidencialidade e lidar com informações sensíveis.</li>
             <li>Atenção aos detalhes e fortes habilidades organizacionais.</li>
         </ol>`,
-        salary: 89000,
-        date: 1729681667114,
+        salary: 10000,
+        date: 1736721940067,
         category: "Gestão",
     }
     ,
@@ -789,8 +789,8 @@ export const jobsData = [
             <li>Excelentes habilidades analíticas e capacidade de interpretar dados.</li>
             <li>Fortes habilidades de liderança e gerenciamento de projetos.</li>
         </ol>`,
-        salary: 99000,
-        date: 1729681667114,
+        salary: 20000,
+        date: 1736808077718,
         category: "Marketing",
     }
     ,
@@ -798,7 +798,7 @@ export const jobsData = [
         _id: '20',
         title: "Designer Gráfico",
         location: "Belo Horizonte",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -823,8 +823,8 @@ export const jobsData = [
             <li>Excelentes habilidades de comunicação e colaboração.</li>
             <li>Um portfólio que demonstre trabalhos de design relevantes é obrigatório.</li>
         </ol>`,
-        salary: 91000,
-        date: 1729681667114,
+        salary: 9000,
+        date: 1736894215369,
         category: "Design",
     }
     ,
@@ -832,7 +832,7 @@ export const jobsData = [
         _id: '21',
         title: "Testador de Software",
         location: "Curitiba",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -857,8 +857,8 @@ export const jobsData = [
             <li>Excelente atenção aos detalhes e capacidade de trabalhar sob prazos apertados.</li>
             <li>Boas habilidades de comunicação para articular os resultados e desafios dos testes.</li>
         </ol>`,
-        salary: 123000,
-        date: 1729681667114,
+        salary: 12000,
+        date: 1736980353020,
         category: "Programação",
     }
     ,
@@ -891,8 +891,8 @@ export const jobsData = [
             <li>Excelentes habilidades analíticas e de resolução de problemas.</li>
             <li>Fortes habilidades de comunicação para trabalhar com equipes técnicas e não técnicas.</li>
         </ol>`,
-        salary: 87000,
-        date: 1729681667114,
+        salary: 18000,
+        date: 1737066490671,
         category: "Cibersegurança",
     }
     ,
@@ -900,7 +900,7 @@ export const jobsData = [
         _id: '23',
         title: "Engenheiro de Nuvem",
         location: "Florianópolis",
-        level: "Intermediário",
+        level: "Pleno",
         companyId: {
             "_id": "670e4d25ca9fda8f1bf359b9",
             "name": "Slack",
@@ -925,8 +925,8 @@ export const jobsData = [
             <li>Experiência com ferramentas de orquestração de contêineres, como Kubernetes.</li>
             <li>Boas habilidades de resolução de problemas e atenção aos detalhes.</li>
         </ol>`,
-        salary: 102000,
-        date: 1729681667114,
+        salary: 12000,
+        date: 1737152628322,
         category: "Programação",
     }    
 ];
