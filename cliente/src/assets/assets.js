@@ -24,7 +24,7 @@ import instagram_icon from './instagram_icon.svg'
 import twitter_icon from './twitter_icon.svg'
 import home_icon from './home_icon.svg'
 import add_icon from './add_icon.svg'
-import profile_upload_icon from './profile_upload_icon.svg'
+import profile_upload_icon from './profile_upload_icon.png'
 import person_tick_icon from './person_tick_icon.svg'
 import resume_download_icon from './resume_download_icon.svg'
 import delete_icon from './delete_icon.svg'
@@ -106,7 +106,7 @@ export const jobsApplied = [
         company: 'Amazon',
         title: 'Desenvolvedor Full Stack',
         location: 'Campina Grande',
-        date: '22 Ago, 2024',
+        date: '28 Dec, 2024',
         status: 'Pendente',
         logo: company_icon,
     },
@@ -114,7 +114,7 @@ export const jobsApplied = [
         company: 'Meta',
         title: 'Cientista de Dados',
         location: 'São Paulo',
-        date: '22 Ago, 2024',
+        date: '05 Jan, 2025',
         status: 'Rejeitado',
         logo: company_icon,
     },
@@ -122,7 +122,7 @@ export const jobsApplied = [
         company: 'Google',
         title: 'Gerente de Marketing',
         location: 'Rio de Janeiro',
-        date: '25 Set, 2024',
+        date: '12 Jan, 2025',
         status: 'Aceito',
         logo: company_icon,
     },
@@ -130,7 +130,7 @@ export const jobsApplied = [
         company: 'Qualcomm',
         title: 'Designer UI/UX',
         location: 'Campina Grande',
-        date: '15 Out, 2024',
+        date: '10 Jan, 2025',
         status: 'Pendente',
         logo: company_icon,
     },
@@ -138,10 +138,10 @@ export const jobsApplied = [
         company: 'Microsoft',
         title: 'Desenvolvedor Full Stack',
         location: 'Belo Horizonte',
-        date: '25 Set, 2024',
+        date: '18 Jan, 2025',
         status: 'Aceito',
         logo: company_icon,
-    },
+    },    
 ];
 
 export const viewApplicationsPageData = [
