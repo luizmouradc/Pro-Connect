@@ -94,10 +94,10 @@ export const JobLocations = [
 
 // Sample data for Manage Jobs Page
 export const manageJobsData = [
-    { _id: 1, title: "Desenvolvedor Full Stack", date: 1729102298497, location: "São Paulo", applicants: 20 },
-    { _id: 2, title: "Cientista de Dados", date: 1729102298497, location: "Belo Horizonte", applicants: 15 },
-    { _id: 3, title: "Gerente de Marketing", date: 1729102298497, location: "Fortaleza", applicants: 2 },
-    { _id: 4, title: "UI/UX Designer", date: 1729102298497, location: "Salvador", applicants: 25 }
+    { _id: 1, title: "Desenvolvedor Full Stack", date: 1735344000000, location: "São Paulo", applicants: 20 },
+    { _id: 2, title: "Cientista de Dados", date: 1735776000000, location: "Belo Horizonte", applicants: 15 },
+    { _id: 3, title: "Gerente de Marketing", date: 1736208000000, location: "Fortaleza", applicants: 2 },
+    { _id: 4, title: "UI/UX Designer", date: 1736899200000, location: "Salvador", applicants: 25 }
 ];
 
 // Sample data for Profile Page

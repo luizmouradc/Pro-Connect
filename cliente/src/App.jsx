@@ -8,7 +8,8 @@ import { AppContext } from './context/AppContext'
 import Dashboard from './pages/Dashboard'
 import AddJob from './pages/AddJob'
 import MenageJobs from './pages/MenageJobs'
-import ViewApplications from './pages/ViewApplications'
+import ViewApplications from './pages/ViewApplications' 
+import 'quill/dist/quill.snow.css'
 
 const App = () => {
 
