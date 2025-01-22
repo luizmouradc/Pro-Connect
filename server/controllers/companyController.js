@@ -86,6 +86,16 @@ export const loginCompany = async (req, res) => {
 // Obter dados da empresa
 export const getCompanyData = async (req, res) => {
 
+    const company = req.company
+
+    try {
+        res.json({success:true, company})
+    }catch(error){
+        res.json({
+            success:false, message:error.message
+        })
+    }
+
 }
 
 // Postar um novo emprego
@@ -127,7 +137,17 @@ export const getCompanyJobApplicants = async (req, res) => {
 
 // Obter empregos postados pela empresa
 export const getCompanyPostedJobs = async (req, res) => {
+    try {
+        const companyId = req.company._id
 
+        const jobs = await Job.find({companyId})
+
+        // (ToDo) Adicionando o número de informações dos candidatos nos dados
+
+        res.json({success:true, jobsData: jobs})
+    } catch (error) {
+        res.json({success:false, message:error.message})
+    }
 }
 
 // Alterar o status da candidatura
@@ -137,5 +157,23 @@ export const ChangeJobApplicationsStatus = async (req, res) => {
 
 // Alterar visibilidade da vaga
 export const changeVisiblity = async (req, res) => {
+    try {
+        
+        const {id} = req.body
 
+        const companyId = req.company._id
+
+        const job = await Job.findByid(id)
+
+        if(companyId.toSting() === job.companyId.toString()){
+            job.visible = !jov.visible
+        }
+
+        await job.save()
+
+        res.json({success:true, job})
+
+    } catch (error) {
+        res.json({success:false, message:error.message})
+    }
 }
