@@ -1,5 +1,5 @@
 import Job from "../models/job.js"
-import JobAppAplication from "../models/JobApplication.js"
+import JobApplication from "../models/JobApplication.js"
 import User from "../models/User.js"
 import {v2 as cloudinary} from"cloudinary"
 
@@ -32,9 +32,9 @@ export const applyForJob = async (req, res) => {
 
     try {
         
-        const isAlreadyApplied = await JobAppAplication.find({jobId, userId})
+        const isAlreadyApplied = await JobApplication.find({jobId, userId})
 
-        if(isAlreadyApplies.length > 0) {
+        if(isAlreadyApplied.length > 0) {
             return res.json({success:false, message:'Já aplicado'})
         }
 
@@ -44,7 +44,7 @@ export const applyForJob = async (req, res) => {
             return res.json({success:false, message:'Trabalho não encontrado'})
         }
 
-        await JobAppAplication.create({
+        await JobApplication.create({
             companyId:jobData.companyId,
             userId,
             jobId,
@@ -66,7 +66,7 @@ export const getUserJobApplications = async (req, res) => {
         
         const userId = req.auth.userId
 
-        const application = await JobAppAplication.find({userId})
+        const application = await JobApplication.find({userId})
         .populate('companyId', 'name email image')
         .populate('jobId', 'title description location category level salary')
         .exec()
@@ -75,7 +75,7 @@ export const getUserJobApplications = async (req, res) => {
             return res.json({success: false, message:'Não foram encontradas candidaturas de emprego para este'})
         }
 
-        return res.json({success: true, applications})
+        return res.json({success: true, application})
 
     } catch (error) {
         res.json({success:false, message:error.message})
