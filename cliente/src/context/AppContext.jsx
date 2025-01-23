@@ -25,7 +25,20 @@ export const AppContextProvider = (props) => {
 
     // função para buscar empregos
     const fetchJobs = async () => {
-        setJobs(jobsData)
+        try {
+            
+            const {data} = await axios.get(backendUrl+'/api/jobs')
+
+            if(data.success){
+                setJobs(data.jobs)
+                console.log(data.jobs)
+            }else{
+                toast.error(data.message)
+            }
+
+        } catch (error) {
+            toast.error(error.message)
+        }
     }
 
     // função para buscar dados da empresa

@@ -169,10 +169,10 @@ export const changeVisiblity = async (req, res) => {
 
         const companyId = req.company._id
 
-        const job = await Job.findByid(id)
+        const job = await Job.findById(id)
 
-        if(companyId.toSting() === job.companyId.toString()){
-            job.visible = !jov.visible
+        if(companyId.toString() === job.companyId.toString()){
+            job.visible = !job.visible
         }
 
         await job.save()
