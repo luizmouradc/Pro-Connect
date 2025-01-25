@@ -133,7 +133,18 @@ export const postJob = async (req, res) => {
 
 // Obter candidatos para vaga da empresa
 export const getCompanyJobApplicants = async (req, res) => {
+    try {
+        
+        const companyId = req.company._id
 
+        // find job applications fot he user and populete realted data
+        const applications = await JobApplication.find({companyId}).populate('userId','name image resume').pupulate('jobId','title location category level salary').exec()
+
+        return res.json({success:true, applications})
+
+    } catch (error) {
+        res.json({success:false, message:error.message})
+    }
 }
 
 // Obter empregos postados pela empresa
@@ -159,6 +170,18 @@ export const getCompanyPostedJobs = async (req, res) => {
 // Alterar o status da candidatura
 export const ChangeJobApplicationsStatus = async (req, res) => {
 
+    try {
+
+        const {id, status} = req.body
+    
+        // find job application and update status
+        await JobApplication.findOneAndUpdate({_id:id},{status})
+    
+        res.json({success:true, message:'Status alterado'})
+        
+    } catch (error) {
+        res.json({success:false, message:error.message})
+    }
 }
 
 // Alterar visibilidade da vaga

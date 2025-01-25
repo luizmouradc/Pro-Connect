@@ -5,12 +5,13 @@ import { useNavigate } from 'react-router-dom'
 import { AppContext } from '../context/AppContext'
 import axios from 'axios'
 import { toast } from 'react-toastify'
+import Loading from '../components/Loading'
 
 const MenageJobs = () => {
 
   const navigate = useNavigate()
 
-  const [jobs, setJobs] = useState([])
+  const [jobs, setJobs] = useState(false)
 
   const {backendUrl, companyToken} = useContext(AppContext)
 
@@ -64,7 +65,10 @@ const MenageJobs = () => {
     }
   }
 
-  return (
+  return jobs ? jobs.length === 0 ? ( 
+  <div className=' flex items-center justify-center h-[70vh]'>
+    <p className='text-xl sm:text-2xl'>Nenhuma vaga disponível ou publicada</p>
+  </div> ) : (
     <div className=' container p-4 max-w-5xl'>
       <div className=' overflow-x-auto'>
         <table className=' min-w-full bg-white border border-gray-200 max-sm:text-sm'>
@@ -100,7 +104,7 @@ const MenageJobs = () => {
         <button onClick={()=> navigate('/painel/adicionar-vaga')}  className='w-45 px-6 py-3 mt-4 bg-black text-white rounded-lg shadow-md '>Adicionar Nova Vaga</button>
       </div>
     </div>
-  )
+  ) : <Loading/>
 }
 
 export default MenageJobs
