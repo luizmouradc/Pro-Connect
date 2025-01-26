@@ -23,9 +23,7 @@ const MenageJobs = () => {
       const {data} = await axios.get(backendUrl+'/api/company/list-jobs', {headers:{token: companyToken}})
 
       if(data.success){
-        setJobs(data.jobsData.reverse())
-        console.log(data.jobsData);
-        
+        setJobs(data.jobsData.reverse())        
       }else{
         toast.error(data.message)
       }

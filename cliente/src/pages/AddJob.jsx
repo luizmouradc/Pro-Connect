@@ -9,9 +9,9 @@ import { toast } from 'react-toastify';
 const AddJob = () => {
 
   const [title, setTitle] = useState('');
-  const [location, setLocation] = useState('Bangalore');
-  const [category, setCategory] = useState('Programming');
-  const [level, setLevel] = useState('Beginner level');
+  const [location, setLocation] = useState('São Paulo');
+  const [category, setCategory] = useState('Programação');
+  const [level, setLevel] = useState('Júnior');
   const [salary, setSalary] = useState(0)
 
   const editorRef = useRef(null)

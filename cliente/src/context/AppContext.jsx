@@ -38,7 +38,6 @@ export const AppContextProvider = (props) => {
 
             if(data.success){
                 setJobs(data.jobs)
-                console.log(data.jobs)
             }else{
                 toast.error(data.message)
             }
@@ -56,7 +55,6 @@ export const AppContextProvider = (props) => {
 
             if(data.success){
                 setCompanyData(data.company)
-                console.log(data)
             }else{
                 toast.error(data.message)
             }
@@ -76,7 +74,7 @@ export const AppContextProvider = (props) => {
             const {data} = await axios.get(backendUrl+'/api/users/user',{headers:{Authorization:`Bearer ${token}`}})
 
             if(data.success){
-                setUserData(data.user)
+                setUserData(data.user)   
             }else{
                 toast.error(error.message)
             }
@@ -94,7 +92,7 @@ export const AppContextProvider = (props) => {
             const {data} = await axios.get(backendUrl+'/api/users/applications',{headers: {Authorization: `Bearer ${token}`}})
 
             if(data.success){
-                setUserApplications(data.applications)
+                setUserApplications(data.application )    
             }else{
                 toast.error(data.message)
             }
@@ -123,7 +121,7 @@ export const AppContextProvider = (props) => {
 
     }, [companyToken])
 
-    useEffect(() => {
+    useEffect(() => {        
         if(user){
             fetchUserData()
             fetchUserApplications()

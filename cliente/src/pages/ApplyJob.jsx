@@ -18,7 +18,7 @@ const ApplyJob = () => {
 
   const {getToken} = useAuth()
 
-  const navegate = useNavigate()
+  const navigate = useNavigate()
 
   const [JobData, setJobData] = useState(null)
   const [isAlreadyApplied, setIsAlreadyApplied] = useState(false)
@@ -50,13 +50,14 @@ const ApplyJob = () => {
       }
 
       if (!userData.resume){
-        navegate('/aplicacoes')
+        navigate('/aplicacoes')
         return toast.error('Carregar currículo para se inscrever')
       }
 
       const token = await getToken()
 
-      const {data} = await axios.post(backendUrl+'api/users/apply', {jobId: JobData._id},{headers: {Authorization:`Bearer ${token}`}})
+      const {data} = await axios.post(backendUrl+'/api/users/apply', {jobId: JobData._id},{headers: {Authorization:`Bearer ${token}`}})
+       
 
       if(data.success) {
         toast.success(data.message)
@@ -70,19 +71,19 @@ const ApplyJob = () => {
     }
   }
 
-  const chechAlreadyApplied = () => {
+  const checkAlreadyApplied = () => {
     const hasApplied = userApplications.some(item => item.jobId._id === JobData._id)
     setIsAlreadyApplied(hasApplied)
 
   }
-
+  
   useEffect(() => {
     fetchJob()
   }, [id])
 
   useEffect(() => {
     if(userApplications.length > 0 && JobData) {
-      chechAlreadyApplied()
+      checkAlreadyApplied()
     }
   },[JobData,userApplications, id])
 
@@ -125,7 +126,7 @@ const ApplyJob = () => {
               <button onClick={applyHandler} className='bg-lightseagreen p-2.5 px-10 text-white rounded'>{isAlreadyApplied? 'Já aplicado' : 'Inscreva-se agora'}</button>
               <p className='mt-1 text-gray-600 '>Publicado em {moment(JobData.date).format('DD/MM/YYYY')}</p>
             </div>
-
+             
           </div>
 
           <div className=' flex flex-col lg:flex-row justify-between items-start'>

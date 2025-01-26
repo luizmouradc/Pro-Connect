@@ -138,7 +138,7 @@ export const getCompanyJobApplicants = async (req, res) => {
         const companyId = req.company._id
 
         // find job applications fot he user and populete realted data
-        const applications = await JobApplication.find({companyId}).populate('userId','name image resume').pupulate('jobId','title location category level salary').exec()
+        const applications = await JobApplication.find({companyId}).populate('userId','name image resume').populate('jobId','title location category level salary').exec()
 
         return res.json({success:true, applications})
 

@@ -89,7 +89,7 @@ export const JobLocations = [
     "Belo Horizonte",
     "João Pessoa",
     "Fortaleza",
-    "Curitiba"
+    "Remoto"
 ];
 
 // Sample data for Manage Jobs Page

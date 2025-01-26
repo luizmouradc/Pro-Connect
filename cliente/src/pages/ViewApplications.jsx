@@ -6,20 +6,22 @@ import { toast } from 'react-toastify'
 import Loading from '../components/Loading'
 
 const ViewApplications = () => {
-
+  
   const {backendUrl, companyToken} = useContext(AppContext)
-
+  
   const [applicants, setApplicants] = useState(false)
 
   // function to fetch company job applicants data
   const fetchCompanyJobApplicantions = async () => {
-
+    
     try {
 
-      const {data} = await axios.get(backendUrl+'api/company/applicants',{headers:{token : companyToken}})
+      const {data} = await axios.get(backendUrl+'/api/company/applicants',{headers:{token : companyToken}})
 
       if(data.success){
         setApplicants(data.applications.reverse())
+        console.log("Dados retornados do backend:", data.applications);
+
       }else{
         toast.error(data.message)
       }
@@ -33,7 +35,7 @@ const ViewApplications = () => {
   const changeJobApplicationStatus = async (id, status) => {
     try {
       
-      const {data} = await axios.post(backendUrl+'/api/company/change-status',{id, status},{headers:{token:companyToken}})
+      const {data} = await axios.post(backendUrl+'/api/company/change-status',{id, status},{headers:{token:companyToken}})      
 
       if(data.success){
         fetchCompanyJobApplicantions()
@@ -54,7 +56,7 @@ const ViewApplications = () => {
 
   return applicants ? applicants.length === 0 ? ( 
     <div className=' flex items-center justify-center h-[70vh]'>
-      <p className='text-xl sm:text-2xl'>No Appliecations Available</p>
+      <p className='text-xl sm:text-2xl'>Nenhuma candidatura recebida</p>
     </div> ) : (
     <div className='container mx-auto p-4'>
       <div>
@@ -76,11 +78,11 @@ const ViewApplications = () => {
                 <td className=' py-2 px-4 border-b text-center'>{index+1}</td>
 
                 <td className=' py-2 px-4 border-b text-center flex items-center'>
-                  <img className=' w-10 h-10 rounded-full mr-3 max-sm:hidden' src={applicant.useId.imgSrc} alt="" />
+                  <img className=' w-10 h-10 rounded-full mr-3 max-sm:hidden' src={applicant.userId.image} alt="" />
                   <span>{applicant.userId.name}</span>
                 </td>
 
-                <td className=' py-2 px-4 border-b  max-sm:hidden'>{applicant.jobId.jobTitle}</td>
+                <td className=' py-2 px-4 border-b  max-sm:hidden'>{applicant.jobId.title}</td>
 
                 <td className=' py-2 px-4 border-b max-sm:hidden'>{applicant.jobId.location}</td>
 
@@ -92,7 +94,7 @@ const ViewApplications = () => {
 
                 <td className=' py-2 px-4 border-b relative'>
                    {/*ou Desição*/ }
-                  {applicant.status === "Peding"
+                  {applicant.status === "Pending"
                   ?
                   <div className=' relative inline-block text-left group'>
                     <button className=' text-gray-500 action-button'>...</button>
