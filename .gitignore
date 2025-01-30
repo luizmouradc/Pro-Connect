@@ -1,1 +1,6 @@
 node_modules
+
+# Ignorar arquivos .env em qualquer lugar do projeto
+.env
+server/.env
+cliente/.env
